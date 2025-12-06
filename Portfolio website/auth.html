@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Sign Up / Login — Utsav</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="dark">
+  <header class="site-header">
+    <div class="container header-grid">
+      <div class="brand">
+        <img src="images/Me.jpg" alt="Utsav" class="avatar"/>
+        <div>
+          <h1>Utsav Kumar Garg</h1>
+          <p class="tagline">Engineering Student and Machine learning enthusiast.</p>
+        </div>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+        <a href="auth.html" class="btn">Sign Up / Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container auth-container">
+    <div class="auth-box">
+      <h2>Sign Up</h2>
+      <form id="signupForm" novalidate>
+        <label for="suName">Full name</label>
+        <input id="suName" required />
+
+        <label for="suEmail">Email</label>
+        <input id="suEmail" type="email" required />
+
+        <label for="suPass">Password</label>
+        <input id="suPass" type="password" required />
+
+        <label for="suConfirm">Confirm Password</label>
+        <input id="suConfirm" type="password" required />
+
+        <button type="submit" class="primary-btn">Create account</button>
+        <div id="signupError" class="error"></div>
+      </form>
+    </div>
+
+    <div class="auth-box">
+      <h2>Login</h2>
+      <form id="loginForm" novalidate>
+        <label for="liEmail">Email</label>
+        <input id="liEmail" type="email" required />
+
+        <label for="liPass">Password</label>
+        <input id="liPass" type="password" required />
+
+        <button type="submit" class="primary-btn">Login</button>
+        <div id="loginError" class="error"></div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Contact: <a href="mailto:rudragarg1326@gmail.com">rudragarg1326@gmail.com</a></p>
+      <p>&copy; <span id="year5"></span> Utsav Kumar Garg</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

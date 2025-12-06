@@ -1,0 +1,53 @@
+<!-- Save this as index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Bookstore Homepage</title>
+</head>
+<frameset rows="20%,*">
+    <!-- Top frame: Logo, College Name, Navigation Links -->
+    <frame src="top.html" name="topFrame">
+    
+    <!-- Remaining area split into left and right frames -->
+    <frameset cols="20%,*">
+        <!-- Left frame: Department links -->
+        <frame src="left.html" name="leftFrame">
+        
+        <!-- Right frame: Content area -->
+        <frame src="right.html" name="rightFrame">
+    </frameset>
+</frameset>
+</html>
+<!DOCTYPE html>
+<html>
+<head><title>Top Frame</title></head>
+<body style="text-align:center; background-color:#f0f0f0;">
+    <h2><img src="logo.png" alt="Logo" height="50"> KIET Group of Institutions</h2>
+    <a href="right.html" target="rightFrame">Home</a> |
+    <a href="login.html" target="rightFrame">Login</a> |
+    <a href="register.html" target="rightFrame">Registration</a> |
+    <a href="catalogue.html" target="rightFrame">Catalogue</a> |
+    <a href="cart.html" target="rightFrame">Cart</a>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head><title>Left Frame</title></head>
+<body style="background-color:#e0e0ff;">
+    <h3>Departments</h3>
+    <ul>
+        <li><a href="cse.html" target="rightFrame">CSE</a></li>
+        <li><a href="ece.html" target="rightFrame">ECE</a></li>
+        <li><a href="eee.html" target="rightFrame">EEE</a></li>
+        <li><a href="civil.html" target="rightFrame">CIVIL</a></li>
+    </ul>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head><title>Right Frame</title></head>
+<body>
+    <h2>Welcome to the College Bookstore</h2>
+    <p>This website allows students to browse and purchase books by department. Use the links above and on the left to explore the catalogue, register, or view your cart.</p>
+</body>
+</html>

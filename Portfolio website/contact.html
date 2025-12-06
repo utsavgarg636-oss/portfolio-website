@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Contact — Utsav</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="dark">
+  <header class="site-header">
+    <div class="container header-grid">
+      <div class="brand">
+        <img src="images/Me.jpg" alt="Utsav" class="avatar"/>
+        <div>
+          <h1>Utsav Kumar Garg</h1>
+          <p class="tagline">Engineering Student and Machine learning enthusiast.</p>
+        </div>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+        <a href="auth.html" class="btn">Sign Up / Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Contact Me</h2>
+    <form id="contactForm" class="contact-form">
+      <label for="cname">Name</label>
+      <input id="cname" name="name" required />
+
+      <label for="cemail">Email</label>
+      <input id="cemail" name="email" type="email" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+
+      <button type="submit" class="primary-btn">Send</button>
+    </form>
+    <div id="contactMsg" class="hidden"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Contact: <a href="mailto:rudragarg1326@gmail.com">rudragarg1326@gmail.com</a></p>
+      <p>&copy; <span id="year4"></span> Utsav Kumar Garg</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Projects — Utsav</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="dark">
+  <header class="site-header">
+    <div class="container header-grid">
+      <div class="brand">
+        <img src="images/Me.jpg" alt="Utsav" class="avatar"/>
+        <div>
+          <h1>Utsav Kumar Garg</h1>
+          <p class="tagline">Engineering Student and Machine learning enthusiast.</p>
+        </div>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+        <a href="auth.html" class="btn">Sign Up / Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Projects</h2>
+
+    <div class="projects-grid">
+      <article class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>Personal site with projects, contact form and validations (this site).</p>
+        <button class="detail-btn" data-title="Portfolio Website" data-desc="Personal portfolio built with HTML, CSS and JS. Includes sign-up/login form validation and modal project viewer.">View</button>
+      </article>
+
+      <article class="project-card">
+        <h3>Project Two (Example)</h3>
+        <p>Short description of project two — sample project to demonstrate layout.</p>
+        <button class="detail-btn" data-title="Project Two" data-desc="Short demo project description.">View</button>
+      </article>
+
+      <article class="project-card">
+        <h3>Project Three (Example)</h3>
+        <p>Short description of project three — sample project to demonstrate layout.</p>
+        <button class="detail-btn" data-title="Project Three" data-desc="Short demo project description.">View</button>
+      </article>
+    </div>
+
+    <div id="projectModal" class="modal" aria-hidden="true">
+      <div class="modal-content">
+        <button id="modalClose" class="close">×</button>
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Contact: <a href="mailto:rudragarg1326@gmail.com">rudragarg1326@gmail.com</a></p>
+      <p>&copy; <span id="year3"></span> Utsav Kumar Garg</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
